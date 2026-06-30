@@ -3,3 +3,15 @@ title: "report"
 format: html
 ---
 
+Set up project directory structure
+Add data download module
+Implement return calculation
+Add exploratory data analysis
+Implement risk metrics
+Add covariance and correlation analysis
+Implement portfolio optimisation
+Generate efficient frontier
+Add portfolio backtesting
+Implement Monte Carlo simulation
+Create automated Quarto report
+Update project documentation
