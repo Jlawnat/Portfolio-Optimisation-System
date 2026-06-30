@@ -1,0 +1,4 @@
+Portfolio,Annual_Return,Annual_Volatility,Sharpe
+Equal Weight,0.0829,0.1306,0.6347
+Minimum Variance,0.0502,0.0896,0.5607
+Maximum Sharpe,0.2082,0.1737,1.199
