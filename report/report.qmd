@@ -1,7 +1,7 @@
 ---
 title: "Portfolio Optimisation and Risk Analytics Using Exchange-Traded Funds"
 subtitle: "An End-to-End Quantitative Investment Analysis in R"
-author: "Elliot Young"
+author: "Elliot Yang"
 date: today
 
 format:
@@ -90,16 +90,25 @@ The objectives of this project are to:
 The project follows the workflow below.
 
 ```{mermaid}
-flowchart LR
+flowchart TD
 
-A[Download ETF Data]
--->B[Prepare Returns]
--->C[Exploratory Analysis]
--->D[Risk & Return Analysis]
--->E[Covariance Analysis]
--->F[Portfolio Optimisation]
--->G[Efficient Frontier]
--->H[Backtesting]
--->I[Monte Carlo Simulation]
--->J[Automated Report]
+A[Data Collection]
+B[Data Preparation]
+C[Exploratory Analysis]
+
+D[Risk & Return]
+E[Portfolio Optimisation]
+F[Efficient Frontier]
+
+G[Backtesting]
+H[Monte Carlo Simulation]
+I[Final Report]
+
+A --> B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
+H --> I
 ```
