@@ -1,17 +1,107 @@
 ---
-title: "report"
-format: html
----
+title: "Portfolio Optimisation and Risk Analytics Using Exchange-Traded Funds"
+subtitle: "An End-to-End Quantitative Investment Analysis in R"
+author: "Elliot Young"
+date: today
 
-Set up project directory structure
-Add data download module
-Implement return calculation
-Add exploratory data analysis
-Implement risk metrics
-Add covariance and correlation analysis
-Implement portfolio optimisation
-Generate efficient frontier
-Add portfolio backtesting
-Implement Monte Carlo simulation
-Create automated Quarto report
-Update project documentation
+format:
+  html:
+    theme: flatly
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    number-sections: true
+    code-fold: true
+    code-summary: "Show R Code"
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    smooth-scroll: true
+    embed-resources: true
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+editor: visual
+---
+# Portfolio Optimisation and Risk Analytics
+
+This project develops a fully reproducible portfolio optimisation framework using nine Exchange-Traded Funds (ETFs).
+
+The workflow integrates:
+
+- Data collection from Yahoo Finance
+- Data preprocessing
+- Exploratory data analysis
+- Risk and return analysis
+- Portfolio optimisation
+- Efficient frontier construction
+- Historical backtesting
+- Monte Carlo simulation
+- Automated reporting using Quarto
+
+The entire project is implemented in **R**, allowing every result, table and figure to be reproduced automatically.
+
+# Executive Summary
+
+This project investigates portfolio construction using nine diversified Exchange-Traded Funds (ETFs) representing different investment styles and market capitalisations.
+
+Historical market data are downloaded directly from Yahoo Finance and processed into continuously compounded returns. The project applies modern portfolio theory to evaluate multiple portfolio allocation strategies, including:
+
+- Equal Weight Portfolio
+- Minimum Variance Portfolio
+- Maximum Sharpe Ratio Portfolio
+
+Risk is evaluated using volatility, Sharpe Ratio, Sortino Ratio and Maximum Drawdown, while diversification benefits are examined through covariance and correlation analysis.
+
+Portfolio performance is further assessed through historical backtesting and Monte Carlo simulation, providing insights into expected long-term investment outcomes under different market conditions.
+
+All analyses, figures and tables are generated automatically through a fully reproducible workflow in R.
+
+# Introduction
+
+## Background
+
+Portfolio construction is a fundamental problem in quantitative finance. Investors seek to maximise expected returns while controlling investment risk through diversification across multiple assets.
+
+Modern Portfolio Theory (MPT), introduced by Harry Markowitz, demonstrates that combining assets with imperfect correlations can reduce overall portfolio risk without necessarily sacrificing expected return.
+
+This project applies these principles to construct and evaluate diversified ETF portfolios using historical market data.
+
+## Objectives
+
+The objectives of this project are to:
+
+1. Download historical ETF prices from Yahoo Finance.
+2. Prepare and clean financial return data.
+3. Perform exploratory data analysis.
+4. Measure portfolio risk and return characteristics.
+5. Estimate covariance and correlation structures.
+6. Construct optimal portfolios using Modern Portfolio Theory.
+7. Visualise the Efficient Frontier.
+8. Evaluate portfolio performance through historical backtesting.
+9. Assess future portfolio behaviour using Monte Carlo simulation.
+10. Produce a fully reproducible investment analytics report.
+
+## Project Workflow
+
+The project follows the workflow below.
+
+```{mermaid}
+flowchart LR
+
+A[Download ETF Data]
+-->B[Prepare Returns]
+-->C[Exploratory Analysis]
+-->D[Risk & Return Analysis]
+-->E[Covariance Analysis]
+-->F[Portfolio Optimisation]
+-->G[Efficient Frontier]
+-->H[Backtesting]
+-->I[Monte Carlo Simulation]
+-->J[Automated Report]
+```
+
+
+
