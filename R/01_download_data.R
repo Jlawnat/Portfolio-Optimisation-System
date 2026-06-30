@@ -1,5 +1,5 @@
-library(quantmod)
-library(tidyverse)
+source("R/config.R")
+source("R/functions.R")
 dir.create("data/raw",
            recursive = TRUE,
            showWarnings = FALSE)
