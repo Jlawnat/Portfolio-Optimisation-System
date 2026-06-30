@@ -61,9 +61,33 @@ min_vol <- sqrt(
 ) * sqrt(252)
 
 min_sharpe <- min_return / min_vol
-raw_weights <- solve(Sigma) %*% mu
+rf <- 0.02          # Annual risk-free rate (2%)
+target_return <- max(mu) * 0.75
 
-max_weights <- raw_weights / sum(raw_weights)
+Dmat <- 2 * Sigma
+dvec <- rep(0, n)
+
+Amat <- cbind(
+  rep(1, n),
+  mu,
+  diag(n)
+)
+
+bvec <- c(
+  1,
+  target_return / 252,
+  rep(0, n)
+)
+
+maxQP <- solve.QP(
+  Dmat,
+  dvec,
+  Amat,
+  bvec,
+  meq = 1
+)
+
+max_weights <- maxQP$solution
 
 max_return <- sum(max_weights * mu) * 252
 
@@ -73,7 +97,7 @@ max_vol <- sqrt(
     max_weights
 ) * sqrt(252)
 
-max_sharpe <- max_return / max_vol
+max_sharpe <- (max_return - rf) / max_vol
 weights <- tibble(
   
   Asset = colnames(R),
