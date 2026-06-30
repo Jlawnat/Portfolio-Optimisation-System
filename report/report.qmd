@@ -25,6 +25,7 @@ execute:
 
 editor: visual
 ---
+
 # Portfolio Optimisation and Risk Analytics
 
 This project develops a fully reproducible portfolio optimisation framework using nine Exchange-Traded Funds (ETFs).
@@ -73,15 +74,15 @@ This project applies these principles to construct and evaluate diversified ETF 
 
 The objectives of this project are to:
 
-1. Download historical ETF prices from Yahoo Finance.
-2. Prepare and clean financial return data.
-3. Perform exploratory data analysis.
-4. Measure portfolio risk and return characteristics.
-5. Estimate covariance and correlation structures.
-6. Construct optimal portfolios using Modern Portfolio Theory.
-7. Visualise the Efficient Frontier.
-8. Evaluate portfolio performance through historical backtesting.
-9. Assess future portfolio behaviour using Monte Carlo simulation.
+1.  Download historical ETF prices from Yahoo Finance.
+2.  Prepare and clean financial return data.
+3.  Perform exploratory data analysis.
+4.  Measure portfolio risk and return characteristics.
+5.  Estimate covariance and correlation structures.
+6.  Construct optimal portfolios using Modern Portfolio Theory.
+7.  Visualise the Efficient Frontier.
+8.  Evaluate portfolio performance through historical backtesting.
+9.  Assess future portfolio behaviour using Monte Carlo simulation.
 10. Produce a fully reproducible investment analytics report.
 
 ## Project Workflow
@@ -102,6 +103,3 @@ A[Download ETF Data]
 -->I[Monte Carlo Simulation]
 -->J[Automated Report]
 ```
-
-
-
