@@ -1,4 +1,4 @@
-# 📈 Portfolio Optimisation and Risk Analytics System
+# Portfolio Optimisation and Risk Analytics System
 
 A fully reproducible quantitative finance project that applies **Modern Portfolio Theory (MPT)** to construct, optimise, and evaluate diversified ETF portfolios using R.
 
@@ -59,6 +59,53 @@ Monte Carlo Simulation
         ▼
 Automated Quarto Report
 ```
+# Project Outputs
+
+## Efficient Frontier
+
+![Efficient Frontier](figures/efficient_frontier.png)
+
+---
+
+## Portfolio Growth
+
+![Portfolio Growth](figures/cumulative_wealth.png)
+
+---
+
+## Correlation Heatmap
+
+![Correlation Heatmap](figures/correlation_heatmap.png)
+
+---
+
+## Rolling Volatility
+
+![Rolling Volatility](figures/rolling_volatility.png)
+
+---
+
+## Price Performance
+
+![Price Chart](figures/price_chart.png)
+
+---
+
+## Return Series
+
+![Return Chart](figures/return_chart.png)
+
+---
+
+## Return Distribution
+
+![Histograms](figures/histograms.png)
+
+---
+
+## Return Boxplots
+
+![Boxplots](figures/boxplots.png)
 
 ---
 
