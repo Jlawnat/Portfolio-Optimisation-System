@@ -1,6 +1,5 @@
-library(tidyverse)
-library(PerformanceAnalytics)
-library(xts)
+source("R/config.R")
+source("R/functions.R")
 returns <- read_csv(
   "data/processed/log_returns.csv",
   show_col_types = FALSE
