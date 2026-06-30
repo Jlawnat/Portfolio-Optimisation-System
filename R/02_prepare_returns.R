@@ -1,5 +1,5 @@
-library(tidyverse)
-library(tidyquant)
+source("R/config.R")
+source("R/functions.R")
 prices <- read_csv("data/raw/raw_prices.csv")
 simple_returns <- prices %>%
   arrange(symbol, date) %>%
