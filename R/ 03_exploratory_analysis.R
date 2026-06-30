@@ -1,10 +1,5 @@
-library(tidyverse)
-library(PerformanceAnalytics)
-library(xts)
-library(zoo)
-library(corrplot)
-library(scales)
-
+source("R/config.R")
+source("R/functions.R")
 dir.create("figures",
            recursive = TRUE,
            showWarnings = FALSE)
