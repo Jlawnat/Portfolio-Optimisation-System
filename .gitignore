@@ -1,5 +1,17 @@
-.Rproj.user
+# RStudio files
+.Rproj.user/
 .Rhistory
 .RData
-.Ruserdata
-.positai
+.RDataTmp
+
+# Temporary files
+*.Rproj.user
+
+# macOS
+.DS_Store
+
+# Quarto cache
+.quarto/
+
+# R Markdown cache
+_cache/
